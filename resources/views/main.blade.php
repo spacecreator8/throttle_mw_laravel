@@ -9,13 +9,9 @@
 </head>
 <body>
     <h1>Проверяем ограничение запросов на сервер</h1>
-    @isset($msg)<h2>{{$msg}}</h2>@endisset
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate dicta dignissimos ea earum
-        eum incidunt, ipsam neque nisi numquam odit officiis provident quaerat quisquam rerum suscipit totam veniam voluptates?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate dicta dignissimos ea earum
-        eum incidunt, ipsam neque nisi numquam odit officiis provident quaerat quisquam rerum suscipit totam veniam voluptates?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate dicta dignissimos ea earum
-        eum incidunt, ipsam neque nisi numquam odit officiis provident quaerat quisquam rerum suscipit totam veniam voluptates?
-    </div>
+    @isset($hello)<h2>{{$hello}}</h2>@endisset
+
+    <br>
+    <a href="{{route('registration')}}">Регистрация</a>&nbsp&nbsp&nbsp&nbsp&nbsp<a href="{{route('login')}}">Вход</a>
 </body>
 </html>

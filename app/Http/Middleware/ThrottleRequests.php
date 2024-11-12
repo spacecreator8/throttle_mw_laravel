@@ -40,7 +40,7 @@ class ThrottleRequests extends Middleware
 
         if ($remainingAttempts === 1) {
             // Положите сообщение в сессию, если осталось 1 попытка
-            session()->flash('warning', 'Будьте внимательны - у вас остался всего 1 запрос до выдачи вам таймаута.');
+            session()->flash('warning', mb_strtoupper('Будьте внимательны - у вас остался всего 1 запрос до выдачи вам таймаута.'));
         }
 
         return $this->handleRequest(
